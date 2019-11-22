@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,14 @@
 		2A273E352387C067006308AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A273E342387C067006308AE /* Assets.xcassets */; };
 		2A273E382387C067006308AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A273E372387C067006308AE /* Preview Assets.xcassets */; };
 		2A273E3B2387C067006308AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A273E392387C067006308AE /* LaunchScreen.storyboard */; };
+		2A273E432387C098006308AE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A273E422387C098006308AE /* User.swift */; };
+		2A273E452387C2E9006308AE /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A273E442387C2E9006308AE /* UserData.swift */; };
+		2A273E4D2387E3D4006308AE /* friendface.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A273E4C2387E3D4006308AE /* friendface.json */; };
+		2A273E502387E932006308AE /* SwiftPI in Frameworks */ = {isa = PBXBuildFile; productRef = 2A273E4F2387E932006308AE /* SwiftPI */; };
+		2A273E522387F160006308AE /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A273E512387F160006308AE /* UserRow.swift */; };
+		2A273E542387F40C006308AE /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A273E532387F40C006308AE /* UserDetail.swift */; };
+		2A273E562387F42C006308AE /* UserSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A273E552387F42C006308AE /* UserSection.swift */; };
+		2A966DF5238802AB005983A0 /* FriendsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A966DF4238802AB005983A0 /* FriendsSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,13 @@
 		2A273E372387C067006308AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A273E3A2387C067006308AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A273E3C2387C067006308AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A273E422387C098006308AE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2A273E442387C2E9006308AE /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		2A273E4C2387E3D4006308AE /* friendface.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friendface.json; sourceTree = "<group>"; };
+		2A273E512387F160006308AE /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
+		2A273E532387F40C006308AE /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		2A273E552387F42C006308AE /* UserSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSection.swift; sourceTree = "<group>"; };
+		2A966DF4238802AB005983A0 /* FriendsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A273E502387E932006308AE /* SwiftPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +77,13 @@
 				2A273E2B2387C067006308AE /* AppDelegate.swift */,
 				2A273E2D2387C067006308AE /* SceneDelegate.swift */,
 				2A273E322387C067006308AE /* ContentView.swift */,
+				2A273E512387F160006308AE /* UserRow.swift */,
+				2A273E532387F40C006308AE /* UserDetail.swift */,
+				2A273E552387F42C006308AE /* UserSection.swift */,
+				2A966DF4238802AB005983A0 /* FriendsSection.swift */,
+				2A273E422387C098006308AE /* User.swift */,
+				2A273E442387C2E9006308AE /* UserData.swift */,
+				2A273E4C2387E3D4006308AE /* friendface.json */,
 				2A273E342387C067006308AE /* Assets.xcassets */,
 				2A273E392387C067006308AE /* LaunchScreen.storyboard */,
 				2A273E3C2387C067006308AE /* Info.plist */,
@@ -94,6 +117,9 @@
 			dependencies = (
 			);
 			name = FriendBook;
+			packageProductDependencies = (
+				2A273E4F2387E932006308AE /* SwiftPI */,
+			);
 			productName = FriendBook;
 			productReference = 2A273E282387C067006308AE /* FriendBook.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +148,9 @@
 				Base,
 			);
 			mainGroup = 2A273E1F2387C067006308AE;
+			packageReferences = (
+				2A273E4E2387E932006308AE /* XCRemoteSwiftPackageReference "SwiftPI" */,
+			);
 			productRefGroup = 2A273E292387C067006308AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +167,7 @@
 			files = (
 				2A273E3B2387C067006308AE /* LaunchScreen.storyboard in Resources */,
 				2A273E382387C067006308AE /* Preview Assets.xcassets in Resources */,
+				2A273E4D2387E3D4006308AE /* friendface.json in Resources */,
 				2A273E352387C067006308AE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,9 +179,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A273E452387C2E9006308AE /* UserData.swift in Sources */,
+				2A273E522387F160006308AE /* UserRow.swift in Sources */,
 				2A273E2C2387C067006308AE /* AppDelegate.swift in Sources */,
+				2A966DF5238802AB005983A0 /* FriendsSection.swift in Sources */,
 				2A273E312387C067006308AE /* FriendBook.xcdatamodeld in Sources */,
 				2A273E332387C067006308AE /* ContentView.swift in Sources */,
+				2A273E432387C098006308AE /* User.swift in Sources */,
+				2A273E542387F40C006308AE /* UserDetail.swift in Sources */,
+				2A273E562387F42C006308AE /* UserSection.swift in Sources */,
 				2A273E2E2387C067006308AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +382,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A273E4E2387E932006308AE /* XCRemoteSwiftPackageReference "SwiftPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/igor1309/SwiftPI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A273E4F2387E932006308AE /* SwiftPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A273E4E2387E932006308AE /* XCRemoteSwiftPackageReference "SwiftPI" */;
+			productName = SwiftPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		2A273E2F2387C067006308AE /* FriendBook.xcdatamodeld */ = {
